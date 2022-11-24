@@ -8,7 +8,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
-     xmlns:mammography_screening_recommendation="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#">
+     xmlns:mammography_screening_recommendation="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#"
+     xmlns:mammography_screening_recommendation1="http://purl.org/ontology/mammography_screening_recommendation#">
     <owl:Ontology rdf:about="http://purl.org/ontology/mammography_screening_recommendation">
         <dc:creator xml:lang="en">Cindy Acuña</dc:creator>
         <dc:creator xml:lang="en">Yasmine Anchén</dc:creator>
@@ -241,49 +242,49 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#ageRangeRecommendationHasWoman -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#ageRangeRecommendationHasWoman -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#ageRangeRecommendationHasWoman">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#ageRangeRecommendationHasWoman">
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:label>ageRangeRecommendationHasWoman</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#doesNotHaveHistory -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#doesNotHaveHistory -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#doesNotHaveHistory">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#doesNotHaveHistory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#notHistoryBelongsTo"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#notHistoryBelongsTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasHistory"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasHistory"/>
         <rdfs:comment>Defines the relation between a woman and a History. This property suggest that the woman does not have the personal history it is related to.</rdfs:comment>
         <rdfs:label>doesNotHaveHistory</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
         <rdfs:comment>This property relates a woman with intermediate risk of having cancer to an Age range recommendation</rdfs:comment>
         <rdfs:label>hasAgeRecommendation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasHistory -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#hasHistory -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasHistory">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasHistory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#historyBelongsTo"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#without_intermediate_risk"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#historyBelongsTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#without_intermediate_risk"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
         <rdfs:comment>This property suggest the woman has the personal history it relates to</rdfs:comment>
         <rdfs:label>hasHistory</rdfs:label>
@@ -291,27 +292,27 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasIntermidiateRisk -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#hasIntermidiateRisk -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasIntermidiateRisk">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasIntermidiateRisk">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#intermidiateRiskHasWoman"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#intermidiateRiskHasWoman"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C102402"/>
-        <rdfs:label>Relates a woman to intermidiate risk to have breast cancer</rdfs:label>
+        <rdfs:comment>Relates a woman to intermidiate risk to have breast cancer</rdfs:comment>
         <rdfs:label>hasIntermidiateRisk</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasRecommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#hasRecommendation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasRecommendation">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasRecommendation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
         <rdfs:comment>This property defines the recommendation an Age Range Recommendation has</rdfs:comment>
         <rdfs:label>hasRecommendation</rdfs:label>
@@ -319,32 +320,32 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#historyBelongsTo -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#historyBelongsTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#historyBelongsTo">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#historyBelongsTo">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#without_intermediate_risk"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#notHistoryBelongsTo"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#without_intermediate_risk"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#notHistoryBelongsTo"/>
         <rdfs:comment>This is the inverse relation of hasHistory and relates a history with women</rdfs:comment>
         <rdfs:label>historyBelongsTo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#intermidiateRiskHasWoman -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#intermidiateRiskHasWoman -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#intermidiateRiskHasWoman">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#intermidiateRiskHasWoman">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C102402"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:label>intermidiateRiskHasWoman</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#notHistoryBelongsTo -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#notHistoryBelongsTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#notHistoryBelongsTo">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#notHistoryBelongsTo">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:label>notHistoryBelongsTo</rdfs:label>
@@ -352,22 +353,22 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#recommendationHasAgeRangeRecommendation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
         <rdfs:comment>Inverse of hasRecommendation</rdfs:comment>
         <rdfs:label>recommendationHasAgeRangeRecommendation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#recommendationHasWoman -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#recommendationHasWoman -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#recommendationHasWoman">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#womanHasRecommendation"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#recommendationHasWoman">
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#womanHasRecommendation"/>
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:label>recommendationHasWoman</rdfs:label>
@@ -375,14 +376,14 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#womanHasRecommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#womanHasRecommendation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#womanHasRecommendation">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#womanHasRecommendation">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasRecommendation"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#hasRecommendation"/>
         </owl:propertyChainAxiom>
         <rdfs:label>womanHasRecommendation</rdfs:label>
     </owl:ObjectProperty>
@@ -400,9 +401,9 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#age -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age">
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/mammography_screening_recommendation#age">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Defines the age of a woman</rdfs:comment>
@@ -1037,49 +1038,49 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation">
         <rdfs:comment>Defines the Age range where the recommendation are defined</rdfs:comment>
         <rdfs:label xml:lang="en">Age Range Recommendation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Annual -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C79417"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C79417"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#doesNotHaveHistory"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#doesNotHaveHistory"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#doesNotHaveHistory"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#doesNotHaveHistory"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#doesNotHaveHistory"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#doesNotHaveHistory"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1089,28 +1090,28 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasIntermidiateRisk"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Intermediate_Risk"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasIntermidiateRisk"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Intermediate_Risk"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#without_intermediate_risk"/>
+        <owl:disjointWith rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#without_intermediate_risk"/>
         <rdfs:comment>Subclass of woman that indicates the woman has an intermediate risk to suffer breast cancer</rdfs:comment>
         <rdfs:label xml:lang="en">With intermediate risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_40_to_44 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#between_40_to_44 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_40_to_44">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#between_40_to_44">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1123,7 +1124,7 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1138,16 +1139,16 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#40_to_44_Age_range_recommendation"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#40_to_44_Age_range_recommendation"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1170,15 +1171,15 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_45_to_54 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#between_45_to_54 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_45_to_54">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#between_45_to_54">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1191,7 +1192,7 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1206,16 +1207,16 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#44_to_54_Age_range_recommendation"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#44_to_54_Age_range_recommendation"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1238,15 +1239,15 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greaterThan55 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#greaterThan55 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greaterThan55">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#greaterThan55">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1261,16 +1262,16 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#With_intermediate_risk"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#With_intermediate_risk"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasAgeRecommendation"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greater_than_55_Age_range_recommendation"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasAgeRecommendation"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#greater_than_55_Age_range_recommendation"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#age"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#age"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1290,9 +1291,9 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#without_intermediate_risk -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#without_intermediate_risk -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#without_intermediate_risk">
+    <owl:Class rdf:about="http://purl.org/ontology/mammography_screening_recommendation#without_intermediate_risk">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1301,7 +1302,7 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasIntermidiateRisk"/>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasIntermidiateRisk"/>
                                 <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C102402"/>
                             </owl:Restriction>
                         </owl:complementOf>
@@ -1314,7 +1315,7 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#hasHistory"/>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#hasHistory"/>
                         <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1336,25 +1337,25 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Annual -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual">
-        <rdf:type rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual">
+        <rdf:type rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Annual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual">
-        <rdf:type rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual">
+        <rdf:type rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
         <rdfs:comment xml:lang="en">Confirmed or suspected genetic mutation known to increase breast cancer risk (eg: BRCA)</rdfs:comment>
         <rdfs:label xml:lang="en">Confirmed or suspected genetic mutation</rdfs:label>
@@ -1362,27 +1363,27 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Intermediate_Risk -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Intermediate_Risk -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Intermediate_Risk">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Intermediate_Risk">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C102402"/>
         <rdfs:label xml:lang="en">Intermediate Risk</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
         <rdfs:label xml:lang="en">Personal history of breast cancer</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Qualified_Recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Qualified_Recommendation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Qualified_Recommendation">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Qualified_Recommendation">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
         <rdfs:comment xml:lang="en">They suggest that there is clear evidence of benefit from screening, but less certainty about the balance of benefits and harms.</rdfs:comment>
         <rdfs:label xml:lang="en">Qualified Recommendation</rdfs:label>
@@ -1390,9 +1391,9 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
         <rdfs:comment xml:lang="en">Received radiotherapy to the chest from age 10 to 30</rdfs:comment>
         <rdfs:label xml:lang="en">Radiotherapy to the chest</rdfs:label>
@@ -1400,9 +1401,9 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Strong_Recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Strong_Recommendation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Strong_Recommendation">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Strong_Recommendation">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
         <rdfs:comment xml:lang="en">Consensus that the benefits of adherence to this intervention outweigh the undesirable effects that may result from screening</rdfs:comment>
         <rdfs:label xml:lang="en">Strong Recommendation</rdfs:label>
@@ -1410,101 +1411,101 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman1 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman1">
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest"/>
-        <mammography_screening_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</mammography_screening_recommendation:age>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman1">
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest"/>
+        <mammography_screening_recommendation1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</mammography_screening_recommendation1:age>
         <rdfs:label xml:lang="en">Woman 1</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman2 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman2">
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest"/>
-        <mammography_screening_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</mammography_screening_recommendation:age>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman2">
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest"/>
+        <mammography_screening_recommendation1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</mammography_screening_recommendation1:age>
         <rdfs:label xml:lang="en">Woman 2</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman3 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman3">
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman3">
         <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</mammography_screening_recommendation:age>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</mammography_screening_recommendation1:age>
         <rdfs:label xml:lang="en">Woman 3</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman4 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman4">
-        <mammography_screening_recommendation:hasHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</mammography_screening_recommendation:age>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman4">
+        <mammography_screening_recommendation1:hasHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</mammography_screening_recommendation1:age>
         <rdfs:label xml:lang="en">Woman 4</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman5 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman5">
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest"/>
-        <mammography_screening_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</mammography_screening_recommendation:age>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman5">
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest"/>
+        <mammography_screening_recommendation1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</mammography_screening_recommendation1:age>
         <rdfs:label xml:lang="en">Woman 5</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman6 -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#Woman6 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Woman6">
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
-        <mammography_screening_recommendation:doesNotHaveHistory rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Radiotherapy_to_chest"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Woman6">
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Confirmed_or_suspected_genetic_mutation"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Personal_history_of_breast_cancer"/>
+        <mammography_screening_recommendation1:doesNotHaveHistory rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Radiotherapy_to_chest"/>
         <rdfs:label xml:lang="en">Woman 6</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greater_than_55_Age_range_recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#greater_than_55_Age_range_recommendation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greater_than_55_Age_range_recommendation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual"/>
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Qualified_Recommendation"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#greater_than_55_Age_range_recommendation">
+        <rdf:type rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual"/>
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Qualified_Recommendation"/>
         <rdfs:label>&gt;= 55 Age range recommendation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#40_to_44_Age_range_recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#40_to_44_Age_range_recommendation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#40_to_44_Age_range_recommendation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Age_Range_Recommendation"/>
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual"/>
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Qualified_Recommendation"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#40_to_44_Age_range_recommendation">
+        <rdf:type rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Age_Range_Recommendation"/>
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Annual"/>
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Qualified_Recommendation"/>
         <rdfs:label xml:lang="en">40 to 44 Age range recommendation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#44_to_54_Age_range_recommendation -->
+    <!-- http://purl.org/ontology/mammography_screening_recommendation#44_to_54_Age_range_recommendation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#44_to_54_Age_range_recommendation">
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual"/>
-        <mammography_screening_recommendation:hasRecommendation rdf:resource="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Strong_Recommendation"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mammography_screening_recommendation#44_to_54_Age_range_recommendation">
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Annual"/>
+        <mammography_screening_recommendation1:hasRecommendation rdf:resource="http://purl.org/ontology/mammography_screening_recommendation#Strong_Recommendation"/>
         <rdfs:label xml:lang="en">44 to 54 Age range recommendation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1518,13 +1519,13 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual">
-        <rdfs:label xml:lang="en">Annual</rdfs:label>
+    <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual">
         <rdfs:comment>Periodicity in which a screening mammografy is recommended, in this case  annual.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annual</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#Annual_or_Biannual">
-        <rdfs:label xml:lang="en">Annual or Biannual</rdfs:label>
+    <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#Annual_or_Biannual">
         <rdfs:comment>Periodicity in which a qualified doctor must decide in this case between annual or biannual according to the characteristics of the woman he treats</rdfs:comment>
+        <rdfs:label xml:lang="en">Annual or Biannual</rdfs:label>
     </rdf:Description>
     
 
@@ -1540,9 +1541,9 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_40_to_44"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#between_45_to_54"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#greaterThan55"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#between_40_to_44"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#between_45_to_54"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/mammography_screening_recommendation#greaterThan55"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
