@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
      xmlns:mammography_screening_recommendation="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation">
+    <owl:Ontology rdf:about="http://purl.org/ontology/mammography_screening_recommendation">
         <dc:creator xml:lang="en">Cindy Acuña</dc:creator>
         <dc:creator xml:lang="en">Yasmine Anchén</dc:creator>
         <dc:description xml:lang="en">This is an ontology that represents a variety of entities and classifications that share the knowledge of the recommendations provided by the guideline from the American Cancer Society on Breast Cancer Screening for Women at Average Risk. 
