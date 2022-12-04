@@ -12,7 +12,8 @@ This ontology was developed as part of an ontology course on UdelaR Univeristy. 
 
 ## Diagrams
 
-![Diagram]()
+![Diagram](https://user-images.githubusercontent.com/31075855/205501438-50aedf99-fb44-46fa-bb2c-478391c86776.png)
+
 
 ## Contributions
 
